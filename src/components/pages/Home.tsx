@@ -24,32 +24,32 @@ export function Home() {
       tech: ["GDevelop", "Pixel Art", "Github", "Figma"],
     },
     {
-      title: "Echoes of the Void",
+      title: "Game Name",
       description:
-        "A narrative-driven puzzle platformer set in a surreal world. Created environmental interaction systems, dialogue system integration, and checkpoint save functionality.",
-      role: "Gameplay Programmer",
-      tech: ["Unity", "C#", "Ink"],
+        "Game Description",
+      role: "Role",
+      tech: ["App"],
     },
     {
-      title: "Tower Defense: Castle Siege",
+      title: "Game Name",
       description:
-        "Strategic tower defense game with unique upgrade paths. Programmed enemy pathfinding algorithms, tower placement validation, and wave spawning systems with difficulty scaling.",
-      role: "Gameplay & AI Programmer",
-      tech: ["Unity", "C#", "NavMesh"],
+        "Game Description",
+      role: "Role",
+      tech: ["App"],
     },
     {
-      title: "Pixel Dungeon Crawler",
+      title: "Game Name",
       description:
-        "Roguelike dungeon crawler with procedural generation. Developed procedural level generation algorithms, enemy behavior systems, and permanent death mechanics with meta-progression.",
-      role: "Systems Programmer",
-      tech: ["Godot", "GDScript", "Aseprite"],
+        "Game Description",
+      role: "Role",
+      tech: ["App"],
     },
     {
-      title: "Mind Maze VR",
+      title: "Game Name",
       description:
-        "Virtual reality puzzle game emphasizing spatial awareness. Implemented VR interaction systems, physics-based puzzles, and comfort mode features for accessibility.",
-      role: "VR Gameplay Programmer",
-      tech: ["Unity", "C#", "XR Toolkit"],
+        "Game Description",
+      role: "Role",
+      tech: ["App"],
     },
   ];
 
