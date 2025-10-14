@@ -3,44 +3,44 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 export function Minis() {
   const miniProjects = [
     {
-      title: "Grappling Hook Prototype",
-      description: "Physics-based grappling hook mechanic with momentum conservation",
+      title: "Game",
+      description: "Description",
       tech: "Unity, C#",
     },
     {
-      title: "Enemy AI Behavior Tree",
-      description: "Modular AI system for patrol, chase, and attack behaviors",
-      tech: "Unreal Engine, Blueprint",
-    },
-    {
-      title: "Dialogue System",
-      description: "Branching dialogue manager with quest integration",
-      tech: "Unity, C#, JSON",
-    },
-    {
-      title: "Inventory System",
-      description: "Grid-based inventory with drag-and-drop functionality",
+      title: "Game",
+      description: "Description",
       tech: "Unity, C#",
     },
     {
-      title: "Procedural Dungeon Generator",
-      description: "Algorithm for creating randomized dungeon layouts",
+      title: "Game",
+      description: "Description",
       tech: "Unity, C#",
     },
     {
-      title: "Combo Attack System",
-      description: "Input buffer system for fighting game style combos",
+      title: "Game",
+      description: "Description",
       tech: "Unity, C#",
     },
     {
-      title: "Save System Manager",
-      description: "Serialization system for game state persistence",
-      tech: "Unity, C#, JSON",
+      title: "Game",
+      description: "Description",
+      tech: "Unity, C#",
     },
     {
-      title: "Camera Controller",
-      description: "Dynamic camera system with collision detection",
-      tech: "Unity, C#, Cinemachine",
+      title: "Game",
+      description: "Description",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Game",
+      description: "Description",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Game",
+      description: "Description",
+      tech: "Unity, C#",
     },
   ];
 
