@@ -1,0 +1,75 @@
+import { ImageWithFallback } from "../figma/ImageWithFallback";
+
+export function Minis() {
+  const miniProjects = [
+    {
+      title: "Grappling Hook Prototype",
+      description: "Physics-based grappling hook mechanic with momentum conservation",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Enemy AI Behavior Tree",
+      description: "Modular AI system for patrol, chase, and attack behaviors",
+      tech: "Unreal Engine, Blueprint",
+    },
+    {
+      title: "Dialogue System",
+      description: "Branching dialogue manager with quest integration",
+      tech: "Unity, C#, JSON",
+    },
+    {
+      title: "Inventory System",
+      description: "Grid-based inventory with drag-and-drop functionality",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Procedural Dungeon Generator",
+      description: "Algorithm for creating randomized dungeon layouts",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Combo Attack System",
+      description: "Input buffer system for fighting game style combos",
+      tech: "Unity, C#",
+    },
+    {
+      title: "Save System Manager",
+      description: "Serialization system for game state persistence",
+      tech: "Unity, C#, JSON",
+    },
+    {
+      title: "Camera Controller",
+      description: "Dynamic camera system with collision detection",
+      tech: "Unity, C#, Cinemachine",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="mb-8">
+          <h1 className="text-primary mb-2">Mini Projects</h1>
+          <p className="text-muted-foreground">
+            Smaller experiments and prototypes exploring specific gameplay mechanics and systems
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {miniProjects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-card border border-border rounded-lg p-6 hover:shadow-md transition-shadow"
+            >
+              <div className="aspect-video bg-muted rounded-md mb-4 flex items-center justify-center">
+                <div className="text-muted-foreground">Prototype</div>
+              </div>
+              <h3 className="text-primary mb-2">{project.title}</h3>
+              <p className="text-foreground mb-3">{project.description}</p>
+              <p className="text-sm text-muted-foreground">{project.tech}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
