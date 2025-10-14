@@ -24,18 +24,11 @@ export function Home() {
       tech: ["Figma", "Google Suites", "Miro"],
     },
     {
-      title: "Seam Strike",
+      title: "Game Name",
       description:
-        "A tactical wave-based FPS featuring a unique quilt-based progression system and dynamic combat mechanics. Developed core systems including wave spawning logic, procedural upgrade paths, weapon ability customization, and strategic resource management.",
-      role: "UX/UI and Economy Design",
-      tech: ["GDevelop", "Pixel Art", "Git", "Figma", "Miro"],
-    },
-    {
-      title: "Caring for Someone with Epilepsy",
-      description:
-        "Caring for Someone with Epilepsy is my first story line game made with Twine using JavaScript and HTML/CSS. Because it is a Twine file, it cannot be played, but I seek to create a simulator version while I learn 3D game engines.",
-      role: "Narrative Designer and Developer",
-      tech: ["Twine", "JavaScript", "HTML/CSS"],
+        "Game Description",
+      role: "Role",
+      tech: ["Tech Stack"],
     },
   ];
 

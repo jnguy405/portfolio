@@ -3,14 +3,16 @@ import { ImageWithFallback } from "../figma/ImageWithFallback";
 export function Minis() {
   const miniProjects = [
     {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
+      title: "Seam Strike",
+      description:
+        "A tactical wave-based FPS featuring a unique quilt-based progression system and dynamic combat mechanics. Developed core systems including wave spawning logic, procedural upgrade paths, weapon ability customization, and strategic resource management.",
+      tech: ["GDevelop, Pixel Art, Git, Figma, Miro"],
     },
     {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
+      title: "Caring for Someone with Epilepsy",
+      description:
+        "Caring for Someone with Epilepsy is my first story line game made with Twine using JavaScript and HTML/CSS. Inspired by my personal experiences with my mother who had Epilepsy, I aim to create an educational simulator version while I learn 3D game engines.",
+      tech: ["Twine, JavaScript, HTML/CSS"],
     },
     {
       title: "Game",
