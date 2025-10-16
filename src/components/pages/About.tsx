@@ -8,13 +8,11 @@ export function About() {
           <section className="bg-card border border-border rounded-lg p-8">
             <h2 className="text-primary mb-4">Background</h2>
             <p className="mb-4">
-              I'm a game design major with a specialization in gameplay programming. My passion lies in creating 
-              engaging game mechanics and polished player experiences that bring game worlds to life.
+              I'm a 3rd year computer science game design major with a specialization in gameplay programming with additional practice in UX/UI design, level design, and narrative structures. My passion lies in creating 
+              engaging game mechanics along with developing functional, reusable tools and polished player experiences which bring multifaceted game worlds to life.
             </p>
             <p>
-              Through my academic journey and personal projects, I've developed a strong foundation in both 
-              technical implementation and design theory, allowing me to bridge the gap between creative vision 
-              and functional gameplay systems.
+              Creeping upon these pursuits, I spend time editing and managing content for Slug Gaming at UC Santa Cruz, competing in the collegiate Rainbow 6 Siege scene alongside UCSC Amber, and creating Life, Skincare, & Cosmetics content on my Instagram and TikTok platforms.
             </p>
           </section>
 
@@ -22,23 +20,25 @@ export function About() {
             <h2 className="text-primary mb-4">Skills</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="mb-3">Programming</h3>
+                <h3 className="mb-3">Intermediate</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• C# / C++</li>
-                  <li>• Unity & Unreal Engine</li>
-                  <li>• Gameplay Systems Design</li>
-                  <li>• AI & Pathfinding</li>
-                  <li>• Physics Implementation</li>
+                  <li>• C/C++ DSA </li>
+                  <li>• JavaScript</li>
+                  <li>• TypeScript</li>
+                  <li>• HTML/CSS</li>
+                  <li>• Python</li>
+                  <li>• Prototyping (Figma, Adobe XD)</li>
                 </ul>
               </div>
               <div>
-                <h3 className="mb-3">Design</h3>
+                <h3 className="mb-3">Learning</h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Game Mechanics Design</li>
-                  <li>• Level Design</li>
-                  <li>• Player Experience</li>
-                  <li>• Prototyping</li>
-                  <li>• Playtesting & Iteration</li>
+                  <li>• C#</li>
+                  <li>• C++ GD</li>
+                  <li>• Unity & Unreal Engine</li>
+                  <li>• Adobe After Effects</li>
+                  <li>• Godot</li>
+                  <li>• React.js</li>
                 </ul>
               </div>
             </div>
