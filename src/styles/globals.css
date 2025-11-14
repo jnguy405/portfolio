@@ -6,6 +6,7 @@
 
 :root {
   --font-family: "Roboto Serif", serif;
+  --font-cursive: 'Great Vibes', cursive;
   --font-size: 16px;
   --background: #f5f1ed;
   --foreground: #3d2817;
@@ -182,6 +183,11 @@
     color: var(--color-foreground);
     font-family: var(--font-family);
   }
+}
+
+/* small helper for the cursive greeting */
+.font-cursive {
+  font-family: var(--font-cursive);
 }
 
 /**

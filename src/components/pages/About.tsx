@@ -8,11 +8,11 @@ export function About() {
           <section className="bg-card border border-border rounded-lg p-8">
             <h2 className="text-primary mb-4">Background</h2>
             <p className="mb-4">
-              I'm a 3rd year computer science game design major with a specialization in gameplay programming with additional practice in UX/UI design, level design, and narrative structures. My passion lies in creating 
+              I'm a 3rd year Computer Science Game Design major with a specialization in gameplay programming with additional practice in UX/UI design, level design, and narrative structures. My passion lies in creating 
               engaging game mechanics along with developing functional, reusable tools and polished player experiences which bring multifaceted game worlds to life.
             </p>
             <p>
-              Creeping upon these pursuits, I spend time editing and managing content for Slug Gaming at UC Santa Cruz, competing in the collegiate Rainbow 6 Siege scene alongside UCSC Amber, and creating Life, Skincare, & Cosmetics content on my Instagram and TikTok platforms.
+              Creeping upon these pursuits, I spend time editing and managing content for Slug Gaming at UC Santa Cruz, competing in the collegiate Rainbow 6 Siege scene alongside UCSC Amber, and creating Life, Skincare, & Cosmetics content on Instagram and TikTok.
             </p>
           </section>
 
@@ -47,9 +47,9 @@ export function About() {
           <section className="bg-card border border-border rounded-lg p-8">
             <h2 className="text-primary mb-4">Philosophy</h2>
             <p>
-              I believe great gameplay emerges from the intersection of solid technical implementation and 
-              thoughtful design. Every system should serve the player experience, and every line of code 
-              should contribute to making the game more engaging, intuitive, or fun.
+              I believe great gameplay emerges from the intersection of accessible technical implementation and 
+              user-centered design. Every system should serve the player experience, and every line of code 
+              should contribute to making the game more engaging, intuitive, and fun.
             </p>
           </section>
         </div>

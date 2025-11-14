@@ -15,34 +15,14 @@ export function Minis() {
       tech: ["Twine, JavaScript, HTML/CSS"],
     },
     {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
+      title: "Cafe",
+      description: "Mock Cookie Clicker but coffee shop",
+      tech: "TypeScript, HTML/CSS",
     },
     {
-      title: "Game",
+      title: "World of Bits",
       description: "Description",
-      tech: "Unity, C#",
-    },
-    {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
-    },
-    {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
-    },
-    {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
-    },
-    {
-      title: "Game",
-      description: "Description",
-      tech: "Unity, C#",
+      tech: "TypeScript, HTML/CSS, Leaflet",
     },
   ];
 
