@@ -6,7 +6,7 @@ interface NavigationProps {
   isLoading?: boolean;
 }
 
-const NAV_ITEMS = ["Home", "Contact", "About Me", "Minis", "Projects"];
+const NAV_ITEMS = ["Home", "Media", "Projects", "Minis", "About Me", "Contact"];
 
 export function Navigation({
   currentPage,

@@ -4,7 +4,7 @@ import { AnimatedSection } from "../animation/AnimatedSection";
 import { AnimatedList } from "../animation/AnimatedList";
 import { AnimatedPageWrapper } from "../animation/AnimatedPageWrapper";
 import { TypewriterTitle } from "../animation/TypewriterTitle";
-import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf, FaGamepad, FaVideo } from "react-icons/fa";
 
 const PROFILE_IMAGE = './tech-icons/portrait.png';
 const GITHUB_LINK = "https://github.com/jnguy405";
@@ -13,11 +13,11 @@ const RESUME_LINK = "https://drive.google.com/file/d/10fPYOXYGbWZ9sGDEB3RLhF1PNP
 
 const HERO_TITLES = [
   "Game Systems Programmer",
-  "Game AI Undergrad Researcher",
-  "Slug Gaming Content Manager",
-  "Collegiate Rainbow Six Siege Esports",
+  "G FUEL Social Media Community & Engagement Intern",
+  "Slug Gaming PR & Content Executive",
   "Life, Skincare, & Cosmetics Content Creator",
-  "Social Media & Community Engagement Intern",
+  "Game AI Undergrad Researcher",
+  "Collegiate Rainbow Six Siege Esports",
   "Coffee Enthusiast",
 ];
 
@@ -46,9 +46,9 @@ const PROJECTS: Project[] = [
     role: "Systems Developer: Scoring & Consumables",
     tech: ["Unity", "C#", "CSV Tables"],
     imageUrl: "./game-thumbs/balajong.png",
-    repoLink: "https://github.com/mtang44/Balajong?tab=readme-ov-file", 
-    demoLink: "https://charlesser.itch.io/balajong", 
-    detailsLink: "Projects#balajong", 
+    repoLink: "https://github.com/mtang44/Balajong?tab=readme-ov-file",
+    demoLink: "https://charlesser.itch.io/balajong",
+    detailsLink: "Projects#balajong",
   },
   {
     title: "Mini Mania",
@@ -56,19 +56,19 @@ const PROJECTS: Project[] = [
     role: "Tools Lead & System Developer",
     tech: ["Three.js", "Cannon-es", "React Three Fiber", "Drei", "Zustand", "Blender"],
     imageUrl: "./game-thumbs/minimania.png",
-    repoLink: "https://github.com/jnguy405/Mini-Mania", 
-    demoLink: "https://jnguy405.github.io/Mini-Mania/", 
-    detailsLink: "Projects#mini-mania", 
+    repoLink: "https://github.com/jnguy405/Mini-Mania",
+    demoLink: "https://jnguy405.github.io/Mini-Mania/",
+    detailsLink: "Projects#mini-mania",
   },
   {
     title: "Trickbit",
     description: "A 2D platformer featuring pathfinding enemy AI and dynamic environmental interactions. Core systems developed include finite state machine behaviors, particle effects, physics-based movement, and progressive multi-layer level design.",
     role: "Solo Developer",
     tech: ["Phaser.js", "Tiled", "Javascript", "HTML/CSS", "VS LiveServer"],
-    imageUrl: "./game-thumbs/trickbit.png", 
+    imageUrl: "./game-thumbs/trickbit.png",
     repoLink: "https://github.com/jnguy405/Trickbit",
-    demoLink: "https://jnguy405.github.io/Trickbit/", 
-    detailsLink: "Projects#trickbit", 
+    demoLink: "https://jnguy405.github.io/Trickbit/",
+    detailsLink: "Projects#trickbit",
   },
   {
     title: "Token To-Go",
@@ -76,8 +76,8 @@ const PROJECTS: Project[] = [
     role: "Solo Developer",
     tech: ["TypeScript", "Leaflet", "HTML/CSS"],
     imageUrl: "./game-thumbs/tokentogo.png",
-    repoLink: "https://github.com/jnguy405/TokenToGo", 
-    demoLink: "https://jnguy405.github.io/TokenToGo/", 
+    repoLink: "https://github.com/jnguy405/TokenToGo",
+    demoLink: "https://jnguy405.github.io/TokenToGo/",
     detailsLink: "Projects#token-to-go",
   },
 ];
@@ -94,10 +94,13 @@ const TECH_ICONS: TechIcon[] = [
   { id: "three", name: "Three.js", img: "./tech-icons/three.png", href: "https://threejs.org/" },
 ];
 
-export function Home() {
+interface HomeProps {
+  onNavigate: (page: string) => void;
+}
+
+export function Home({ onNavigate }: HomeProps) {
   return (
     <AnimatedPageWrapper>
-      {/* Header Section */}
       <AnimatedSection
         as="header"
         delay={0}
@@ -155,24 +158,65 @@ export function Home() {
         </div>
       </AnimatedSection>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-12">
-        {/* Technologies Section */}
-        <AnimatedSection
-          delay={100}
-          className="mb-8"
-        >
+      <main className="home-main max-w-7xl mx-auto px-6">
+        <div className="home-pathways">
+          <AnimatedSection delay={150} fromTransform="translateY(24px)">
+            <button
+              type="button"
+              className="home-pathway glass-panel"
+              onClick={() => onNavigate("Projects")}
+            >
+              <div className="home-pathway-icon home-pathway-icon--games">
+                <FaGamepad aria-hidden="true" />
+              </div>
+              <div className="home-pathway-content">
+                <h2 className="home-pathway-title">Game Development</h2>
+                <p className="home-pathway-text">
+                  Featured projects in gameplay programming, systems design, and
+                  interactive experiences built in Unity, Phaser, and web engines.
+                </p>
+                <span className="home-pathway-cta">View Projects →</span>
+              </div>
+              <div className="home-pathway-preview">
+                <img src="./game-thumbs/balajong.png" alt="" aria-hidden="true" />
+                <img src="./game-thumbs/minimania.png" alt="" aria-hidden="true" />
+              </div>
+            </button>
+          </AnimatedSection>
+
+          <AnimatedSection delay={220} fromTransform="translateY(24px)">
+            <button
+              type="button"
+              className="home-pathway glass-panel"
+              onClick={() => onNavigate("Media")}
+            >
+              <div className="home-pathway-icon home-pathway-icon--media">
+                <FaVideo aria-hidden="true" />
+              </div>
+              <div className="home-pathway-content">
+                <h2 className="home-pathway-title">Content & Media</h2>
+                <p className="home-pathway-text">
+                  Social media, community engagement, and short-form content for
+                  G FUEL, Slug Gaming, and personal creator channels.
+                </p>
+                <span className="home-pathway-cta">View Media →</span>
+              </div>
+              <div className="home-pathway-preview home-pathway-preview--media">
+                <img src="./carousel/image1.png" alt="" aria-hidden="true" />
+                <img src="./carousel/image3.png" alt="" aria-hidden="true" />
+              </div>
+            </button>
+          </AnimatedSection>
+        </div>
+
+        <AnimatedSection delay={200} className="mb-8">
           <div className="glass-panel technologies-panel p-6">
             <h3 className="text-lg font-medium mb-1">Technologies</h3>
             <TechBar techIcons={TECH_ICONS} />
           </div>
         </AnimatedSection>
 
-        {/* Projects Header */}
-        <AnimatedSection
-          delay={200}
-          className="mb-8"
-        >
+        <AnimatedSection delay={320} className="mb-8">
           <h2 className="text-foreground mb-2">Featured Projects</h2>
           <p className="text-muted-foreground">
             A selection of my game development work showcasing
@@ -180,12 +224,11 @@ export function Home() {
           </p>
         </AnimatedSection>
 
-        {/* Projects List */}
         <AnimatedList
           items={PROJECTS}
           renderItem={(project, index) => (
-            <ProjectCard 
-              key={index} 
+            <ProjectCard
+              key={index}
               title={project.title}
               description={project.description}
               role={project.role}

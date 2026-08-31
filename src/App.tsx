@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Navigation } from './components/Navigation';
 import { SiteFooter } from './components/SiteFooter';
 import { Home } from './components/pages/Home';
@@ -6,38 +6,63 @@ import { Contact } from './components/pages/Contact';
 import { About } from './components/pages/About';
 import { Minis } from './components/pages/Minis';
 import { Projects } from './components/pages/Projects';
+import { Media } from './components/pages/Media';
+import {
+  hashToNavigationTarget,
+  pageToHash,
+  parseNavigationTarget,
+} from './lib/navigation';
 
 export function App() {
   const [currentPage, setCurrentPage] = useState<string>("Home");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [pendingHash, setPendingHash] = useState<string | null>(null);
 
-  const handleNavigate = (page: string) => {
-    setIsLoading(true);
-    
-    if (page.includes('#')) {
-      const [pageName, hash] = page.split('#');
-      setCurrentPage(pageName);
-      setPendingHash(hash);
-    } else {
-      setCurrentPage(page);
-      setPendingHash(null);
-    }
-    
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    
-    // Simulate loading delay
-    setTimeout(() => setIsLoading(false), 300);
-  };
+  const handleNavigate = useCallback((target: string) => {
+    const { page, anchor } = parseNavigationTarget(target);
 
-  // Handle hash scrolling after Projects component mounts
+    setIsLoading(true);
+    setCurrentPage(page);
+    setPendingHash(anchor);
+
+    const nextHash = pageToHash(page, anchor);
+    const currentHash = window.location.hash;
+
+    if (nextHash !== currentHash) {
+      if (nextHash) {
+        window.history.pushState(null, '', nextHash);
+      } else {
+        window.history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => setIsLoading(false), 300);
+  }, []);
+
+  useEffect(() => {
+    const syncFromHash = () => {
+      const { page, anchor } = hashToNavigationTarget(window.location.hash);
+      setCurrentPage(page);
+      setPendingHash(anchor);
+    };
+
+    syncFromHash();
+    window.addEventListener('hashchange', syncFromHash);
+    window.addEventListener('popstate', syncFromHash);
+
+    return () => {
+      window.removeEventListener('hashchange', syncFromHash);
+      window.removeEventListener('popstate', syncFromHash);
+    };
+  }, []);
+
   useEffect(() => {
     if (currentPage === "Projects" && pendingHash) {
       const scrollToElement = () => {
         const element = document.getElementById(pendingHash);
         if (element) {
-          element.scrollIntoView({ 
+          element.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
@@ -45,13 +70,11 @@ export function App() {
         setPendingHash(null);
       };
 
-      // Delay to ensure DOM is rendered
       const timer = setTimeout(scrollToElement, 500);
       return () => clearTimeout(timer);
     }
   }, [currentPage, pendingHash]);
 
-  // Listen for custom navigation events from ProjectCard
   useEffect(() => {
     const handleCustomNavigate = (event: CustomEvent) => {
       if (event.detail && typeof event.detail === 'string') {
@@ -61,7 +84,7 @@ export function App() {
 
     window.addEventListener('navigate' as any, handleCustomNavigate);
     return () => window.removeEventListener('navigate' as any, handleCustomNavigate);
-  }, []);
+  }, [handleNavigate]);
 
   const renderPage = () => {
     if (isLoading) {
@@ -77,7 +100,9 @@ export function App() {
 
     switch (currentPage) {
       case "Home":
-        return <Home />;
+        return <Home onNavigate={handleNavigate} />;
+      case "Media":
+        return <Media />;
       case "Contact":
         return <Contact />;
       case "Projects":
@@ -87,14 +112,14 @@ export function App() {
       case "Minis":
         return <Minis />;
       default:
-        return <Home />;
+        return <Home onNavigate={handleNavigate} />;
     }
   };
 
   return (
     <div className="app-shell min-h-screen bg-background text-foreground">
-      <Navigation 
-        currentPage={currentPage} 
+      <Navigation
+        currentPage={currentPage}
         onNavigate={handleNavigate}
         isLoading={isLoading}
       />

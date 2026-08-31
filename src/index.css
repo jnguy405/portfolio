@@ -1864,6 +1864,265 @@ html {
   }
 }
 
+/* Home pathway panels */
+.home-main {
+  --home-section-gap: 2rem;
+  padding-top: var(--home-section-gap);
+  padding-bottom: 3rem;
+}
+
+.home-pathways {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: var(--home-section-gap);
+}
+
+@media (width >= 48rem) {
+  .home-pathways {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.home-pathway {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 1.75rem;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+.home-pathway-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  font-size: 1.25rem;
+}
+
+.home-pathway-icon--games {
+  background: color-mix(in srgb, var(--primary) 18%, transparent);
+  color: var(--primary);
+}
+
+.home-pathway-icon--media {
+  background: color-mix(in srgb, var(--secondary) 35%, transparent);
+  color: var(--secondary-foreground);
+}
+
+.home-pathway-title {
+  font-size: 1.35rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.home-pathway-text {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.home-pathway-cta {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.home-pathway-preview {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.home-pathway-preview img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+}
+
+.home-pathway-preview--media img {
+  object-position: center top;
+}
+
+/* Media page — vertical deck cards (9:16), 7 per row */
+.media-deck {
+  --media-deck-columns: 7;
+  display: grid;
+  grid-template-columns: repeat(var(--media-deck-columns), minmax(0, 1fr));
+  gap: 0.65rem;
+  padding: 1.5rem 0 2.5rem;
+  overflow: visible;
+}
+
+.media-deck-card {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center bottom;
+}
+
+.media-deck-card-preview {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--muted) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+}
+
+.media-deck-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.media-deck-card-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--muted-foreground);
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary) 10%, transparent),
+    color-mix(in srgb, var(--muted) 60%, transparent)
+  );
+}
+
+.media-deck-card-placeholder svg {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.7;
+}
+
+.media-deck-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0.85rem 0.25rem 0.25rem;
+}
+
+.media-deck-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.media-deck-card-title {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--primary);
+  line-height: 1.3;
+}
+
+.media-deck-card-role {
+  margin: 0.2rem 0 0;
+  font-size: 0.65rem;
+  color: var(--muted-foreground);
+  line-height: 1.35;
+}
+
+.media-deck-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.media-deck-card-link:hover {
+  transform: scale(1.05);
+  background: color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.media-deck-card-description {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: var(--foreground);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.media-deck-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.media-deck-card-tag {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.6rem;
+  background: color-mix(in srgb, var(--secondary) 30%, transparent);
+  color: var(--secondary-foreground);
+}
+
+@media (width >= 48rem) {
+  .media-deck-card:nth-child(odd) {
+    transform: rotate(-1.5deg);
+  }
+
+  .media-deck-card:nth-child(even) {
+    transform: rotate(1.5deg);
+  }
+
+  .media-deck-card:hover {
+    transform: translateY(-8px) scale(1.03) rotate(0deg);
+    z-index: 20 !important;
+  }
+}
+
+@media (width < 64rem) {
+  .media-deck {
+    --media-deck-columns: 3;
+  }
+}
+
+@media (width < 40rem) {
+  .media-deck {
+    --media-deck-columns: 2;
+  }
+}
+
+@media (width < 30rem) {
+  .media-deck {
+    --media-deck-columns: 1;
+  }
+
+  .media-deck-card {
+    max-width: 280px;
+    margin-inline: auto;
+  }
+}
+
 /* App shell + site footer */
 .app-shell {
   display: flex;
