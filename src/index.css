@@ -1972,12 +1972,30 @@ html {
 }
 
 .media-deck-card-preview {
+  display: block;
   width: 100%;
   aspect-ratio: 9 / 16;
   border-radius: 0.75rem;
   overflow: hidden;
   background: color-mix(in srgb, var(--muted) 70%, transparent);
   border: 1px solid color-mix(in srgb, var(--foreground) 8%, transparent);
+  text-decoration: none;
+  color: inherit;
+}
+
+.media-deck-card-preview--link {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.media-deck-card-preview--link:hover .media-deck-card-image,
+.media-deck-card-preview--link:focus-visible .media-deck-card-image {
+  transform: scale(1.04);
+}
+
+.media-deck-card-preview--link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .media-deck-card-image {
@@ -1986,6 +2004,7 @@ html {
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  transition: transform 0.3s ease;
 }
 
 .media-deck-card-placeholder {

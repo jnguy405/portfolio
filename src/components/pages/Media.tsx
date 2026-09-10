@@ -28,67 +28,74 @@ const MEDIA_SECTIONS: MediaSection[] = [
       "Social media, community engagement, and brand content as the G FUEL Social Media Community & Engagement Intern.",
     items: [
       {
-        title: "Community Campaigns",
+        title: "Mixology Creator Challenge",
         description:
-          "Planning and publishing social content that drives community engagement across G FUEL's platforms.",
+          "Planning and publishing social content that drives community engagement & brand awareness across G FUEL's platforms.",
         role: "G FUEL Social Media Community & Engagement Intern",
         platform: "G FUEL",
-        tags: ["Community Management", "Content Strategy", "Brand Marketing"],
-        imageUrl: "./carousel/image1.png",
+        tags: ["Community Challenge", "Influencer Marketing"],
+        imageUrl: "./media/mixology.png",
+        link: "https://www.instagram.com/p/DbGys3Lh1Os/",
       },
       {
-        title: "Short-Form Video",
+        title: "Summer BOGO",
         description:
-          "Editing and producing short-form video content tailored for social distribution and audience growth.",
-        role: "Content Creator",
-        platform: "G FUEL",
-        tags: ["Video Editing", "Short-Form", "Social Media"],
-        imageUrl: "./carousel/image2.png",
-      },
-      {
-        title: "Product Launch Reel",
-        description:
-          "Highlight reel for a new flavor drop — scripting, editing, and publishing across Instagram and TikTok.",
+          "Editing and producing short-form content to promote sales & increase brand awareness.",
         role: "G FUEL Social Media Community & Engagement Intern",
         platform: "G FUEL",
-        tags: ["Reels", "TikTok", "Launch"],
-        imageUrl: "./carousel/image3.png",
+        tags: ["Outreach", "Sale Promotion", "Brand Awareness"],
+        imageUrl: "./media/summerbogo.png",
+        link: "https://www.instagram.com/p/DbLnqm7E7Mw/",
       },
       {
-        title: "Community Q&A",
+        title: "GTA Trailer Drop",
         description:
-          "Live community engagement series answering fan questions and spotlighting creator submissions.",
+          "Instagram viral moment built by hype & anticipation for the GTA trailer drop.",
         role: "G FUEL Social Media Community & Engagement Intern",
         platform: "G FUEL",
-        tags: ["Community", "Engagement", "UGC"],
-        imageUrl: "./carousel/image4.png",
+        tags: ["Viral", "Trending", "Game Drops"],
+        imageUrl: "./media/gtaviral.png",
+        link: "https://www.instagram.com/p/Dcoo4LMIF0M/?img_index=1",
+      },
+      {
+        title: "PC Gamers",
+        description:
+          "GTA Console release & PC gaming community sentiment to digital copies.",
+        role: "G FUEL Social Media Community & Engagement Intern",
+        platform: "G FUEL",
+        tags: ["Gaming Community", "Trending", "Relatable Content"],
+        imageUrl: "./media/gtapc.png",
+        link: "https://www.instagram.com/p/Dcjz53iBFIr/",
+      },
+      {
+        title: "Meme & Marvel Content",
+        description:
+          "SpiderMan & Marvel rapid-turnaround content aligned with brand voice and gaming culture.",
+        role: "G FUEL Social Media Community & Engagement Intern",
+        platform: "G FUEL",
+        tags: ["Trends", "Memes", "Gaming"],
+        imageUrl: "./media/1v1.png",
+        link: "https://www.instagram.com/p/Db4CUKZBR5u/",
       },
       {
         title: "Meme & Trend Content",
         description:
-          "Rapid-turnaround trend content aligned with brand voice and gaming culture.",
-        role: "Content Creator",
+          "Quickly produced content aligned with brand voice and gaming culture.",
+        role: "G FUEL Social Media Community & Engagement Intern",
         platform: "G FUEL",
         tags: ["Trends", "Memes", "Gaming"],
-        imageUrl: "./carousel/image5.png",
+        imageUrl: "./media/sunshine.png",
+        link: "https://www.instagram.com/p/DbtvPLyBAOr/",
       },
       {
-        title: "Influencer Collab",
+        title: "Socials Impressions",
         description:
-          "Coordinated content with creators for cross-promotional campaigns and product features.",
+          "Engagement for G FUEL's brand awareness & organic growth.",
         role: "G FUEL Social Media Community & Engagement Intern",
         platform: "G FUEL",
-        tags: ["Collab", "Creators", "Campaign"],
-        imageUrl: "./carousel/image6.png",
-      },
-      {
-        title: "Giveaway Promo",
-        description:
-          "Designed and promoted fan giveaways to boost engagement and grow the community.",
-        role: "G FUEL Social Media Community & Engagement Intern",
-        platform: "G FUEL",
-        tags: ["Giveaway", "Promo", "Engagement"],
-        imageUrl: "./carousel/image7.png",
+        tags: ["Organic Growth", "Brand Awareness"],
+        imageUrl: "./media/views.png",
+        link: "https://www.instagram.com/gfuelenergy/",
       },
     ],
   },
@@ -106,6 +113,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["PR", "Content Strategy", "Esports"],
         imageUrl: "./carousel/image6.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
       {
         title: "Tournament Recap",
@@ -115,6 +123,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["Esports", "Recap", "Video"],
         imageUrl: "./carousel/image7.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
       {
         title: "Team Spotlight",
@@ -124,6 +133,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["Spotlight", "Teams", "Storytelling"],
         imageUrl: "./carousel/image8.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
       {
         title: "Club Announcements",
@@ -133,6 +143,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["PR", "Graphics", "Events"],
         imageUrl: "./carousel/image9.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
       {
         title: "Stream Highlights",
@@ -142,6 +153,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["Streams", "Highlights", "Reels"],
         imageUrl: "./carousel/image10.png",
+        link: "https://www.tiktok.com/",
       },
       {
         title: "Recruitment Campaign",
@@ -151,6 +163,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["Recruitment", "PR", "Campaign"],
         imageUrl: "./carousel/image1.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
       {
         title: "Match Day Hype",
@@ -160,6 +173,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Slug Gaming",
         tags: ["Hype", "Match Day", "Esports"],
         imageUrl: "./carousel/image2.png",
+        link: "https://www.instagram.com/sluggaming/",
       },
     ],
   },
@@ -187,6 +201,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["GRWM", "Skincare", "Routine"],
         imageUrl: "./carousel/image1.png",
+        link: "https://www.tiktok.com/",
       },
       {
         title: "Product Review",
@@ -196,6 +211,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["Review", "Beauty", "TikTok"],
         imageUrl: "./carousel/image2.png",
+        link: "https://www.tiktok.com/",
       },
       {
         title: "Day in My Life",
@@ -205,6 +221,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["Vlog", "Lifestyle", "Campus"],
         imageUrl: "./carousel/image3.png",
+        link: "https://www.instagram.com/",
       },
       {
         title: "Cosmetics Tutorial",
@@ -214,6 +231,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["Makeup", "Tutorial", "Cosmetics"],
         imageUrl: "./carousel/image4.png",
+        link: "https://www.instagram.com/",
       },
       {
         title: "Skincare Favorites",
@@ -223,6 +241,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["Skincare", "Favorites", "Review"],
         imageUrl: "./carousel/image5.png",
+        link: "https://www.tiktok.com/",
       },
       {
         title: "OOTD & Style",
@@ -232,6 +251,7 @@ const MEDIA_SECTIONS: MediaSection[] = [
         platform: "Instagram & TikTok",
         tags: ["OOTD", "Fashion", "Lifestyle"],
         imageUrl: "./carousel/image6.png",
+        link: "https://www.instagram.com/",
       },
     ],
   },
@@ -270,25 +290,53 @@ export function Media() {
                     className="media-deck-card glass-panel"
                     style={{ zIndex: section.items.length - index }}
                   >
-                    <div className="media-deck-card-preview">
-                      {item.imageUrl ? (
-                        <img
-                          src={item.imageUrl}
-                          alt={item.title}
-                          className="media-deck-card-image"
-                        />
-                      ) : (
-                        <div className="media-deck-card-placeholder">
-                          {item.platform.includes("Instagram") && (
-                            <FaInstagram aria-hidden="true" />
-                          )}
-                          {item.platform.includes("TikTok") && (
-                            <FaTiktok aria-hidden="true" />
-                          )}
-                          <span>{item.platform}</span>
-                        </div>
-                      )}
-                    </div>
+                    {item.link ? (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="media-deck-card-preview media-deck-card-preview--link"
+                        aria-label={`Watch ${item.title}`}
+                      >
+                        {item.imageUrl ? (
+                          <img
+                            src={item.imageUrl}
+                            alt=""
+                            className="media-deck-card-image"
+                          />
+                        ) : (
+                          <div className="media-deck-card-placeholder">
+                            {item.platform.includes("Instagram") && (
+                              <FaInstagram aria-hidden="true" />
+                            )}
+                            {item.platform.includes("TikTok") && (
+                              <FaTiktok aria-hidden="true" />
+                            )}
+                            <span>{item.platform}</span>
+                          </div>
+                        )}
+                      </a>
+                    ) : (
+                      <div className="media-deck-card-preview">
+                        {item.imageUrl ? (
+                          <img
+                            src={item.imageUrl}
+                            alt={item.title}
+                            className="media-deck-card-image"
+                          />
+                        ) : (
+                          <div className="media-deck-card-placeholder">
+                            {item.platform.includes("Instagram") && (
+                              <FaInstagram aria-hidden="true" />
+                            )}
+                            {item.platform.includes("TikTok") && (
+                              <FaTiktok aria-hidden="true" />
+                            )}
+                            <span>{item.platform}</span>
+                          </div>
+                        )}
+                      </div>
+                    )}
 
                     <div className="media-deck-card-body">
                       <div className="media-deck-card-header">
