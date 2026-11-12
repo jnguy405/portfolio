@@ -1588,6 +1588,10 @@ html {
   border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+.home-hero-photo img {
+  object-position: center top;
+}
+
 .home-hero-content {
   width: 100%;
   text-align: center;

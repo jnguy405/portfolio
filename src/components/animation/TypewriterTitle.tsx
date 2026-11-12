@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-const TYPE_MS = 55;
-const DELETE_MS = 28;
+const TYPE_MS = 40;
+const DELETE_MS = 20;
 const PAUSE_AFTER_TYPED_MS = 2800;
 const PAUSE_AFTER_DELETED_MS = 350;
 
