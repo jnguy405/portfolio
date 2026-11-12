@@ -38,11 +38,16 @@ export function About() {
           >
             <h2 className="text-primary mb-4">Background</h2>
             <p className="mb-4">
-              I'm a 4th year Computer Science Game Design major with a specialization in gameplay programming, with additional practice in UX/UI design, level design, and narrative structures. My passion lies in creating 
-              engaging game mechanics along with developing functional, reusable tools and polished player experiences which bring multifaceted game worlds to life.
+              I'm the Social Media Community & Engagement Intern at G FUEL, driving media production and community outreach. Beyond G FUEL, I run social pages across gaming, cosmetics, fashion, and lifestyle, from my role as PR & Content Executive for Slug Gaming to my own content on Instagram and TikTok!
+            </p>
+            <p className="mb-4">
+              At UC Santa Cruz, I study Computer Science Game Design with a specialization in gameplay programming. I love building mechanics that feel good to play and tools that make development smoother, grounded in UX/UI, level design, and narrative!
+            </p>
+            <p className="mb-4">
+              My research explores AI in games and HCI, focusing on user-centered design for co-creative LLM systems. I'm driven by one question: how can AI work alongside people to create, rather than replace them?
             </p>
             <p>
-              Alongside game development, I'm the G FUEL Social Media Community & Engagement Intern, where I work on content creation, community engagement, and brand marketing. I'm also the PR & Content Executive for Slug Gaming at UC Santa Cruz, compete in the collegiate Rainbow 6 Siege scene alongside UCSC Amber, and create Life, Skincare, & Cosmetics content on Instagram and TikTok.
+              Off the clock, I compete in collegiate Rainbow Six Siege with UCSC Amber. Technical development or creative production, you'll find me there!
             </p>
           </AnimatedSection>
 

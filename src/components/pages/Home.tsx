@@ -12,8 +12,8 @@ const LINKEDIN_LINK = "https://www.linkedin.com/in/jenalee-nguyen-195624314/";
 const RESUME_LINK = "https://drive.google.com/file/d/10fPYOXYGbWZ9sGDEB3RLhF1PNP6uqeId/view?usp=sharing";
 
 const HERO_TITLES = [
-  "Game Systems Programmer",
   "G FUEL Social Media Community & Engagement Intern",
+  "Game Systems Programmer",
   "Slug Gaming PR & Content Executive",
   "Life, Skincare, & Cosmetics Content Creator",
   "Game AI Undergrad Researcher",
